@@ -8,20 +8,20 @@ import base64
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown(
-        "<h1 style='text-align: center; line-height:1.2;'>👨‍🎨이상형<br>그려드립니다.🎨</h1>",
+        "<h1 style='text-align: center; line-height:1.2;'>👨‍🎨이상형<br>그려드립니다.🖼️</h1>",
         unsafe_allow_html=True
     )
     st.image("3.png", width=300)
 
 st.write("원하는 이상형을 설명해주세요.")
-st.write("너무 긴 설명은 오히려 왜곡된 결과를 낼 수 있으므로, 핵심만 명확히 담는 것이 좋습니다!")
+st.write("TIP✨ 너무 긴 설명은 오히려 왜곡된 결과를 낼 수 있으므로, 핵심만 명확히 담는 것이 좋습니다!")
 
 st.markdown(
     """
     <div style="background-color:#e3f2fd; padding: 12px; border-radius: 8px;">
         <span style="font-size: 0.92em;">
             <b>예시 :</b><br>
-            - 눈이 크고 쌍꺼풀이가 있는 여성, 피부는 하얗고 청순한 분위기<br>
+            - 눈이 크고 쌍꺼풀이 있는 여성, 피부는 하얗고 청순한 분위기<br>
             - 차가운 도시 남자 스타일, 수트 입고 있는, 차분한 인상
         </span>
     </div>
