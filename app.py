@@ -8,7 +8,7 @@ import base64
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown(
-        "<h1 style='text-align: center; line-height:1.2;'>👨‍🎨이상형<br>그려드립니다.🖼️</h1>",
+        "<h1 style='text-align: center; line-height:1.2;'>👨‍🎨이상형💓💗💖💘💝💞💕<br>그려드립니다.🖼️</h1>",
         unsafe_allow_html=True
     )
     st.image("3.png", width=300)
@@ -39,7 +39,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 user_input = st.text_input(
-    "유명인의 얼굴은 생성하지 않도록 제한되어 있으므로 실존 인물은 언급하지 마세요.🚫",
+    "🚫유명인의 얼굴은 생성하지 않도록 제한되어 있으므로 실존 인물은 언급하지 마세요.🚫",
     value=""
 )
 
@@ -55,7 +55,7 @@ def make_dalle_prompt(user_text):
 if st.button("이미지 생성하기"):
     if user_input.strip():
         dalle_prompt = make_dalle_prompt(user_input)
-        with st.spinner("이미지 생성 중..."):
+        with st.spinner("당신의 이상형 생성 중..."):
             response = openai.images.generate(
                 model="dall-e-3",
                 prompt=dalle_prompt,
